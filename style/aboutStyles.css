@@ -1,0 +1,103 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 60px;  /* Ensure content is not hidden under the fixed navbar */
+}
+
+.navbar {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #aaa;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content {
+    flex: 1;
+    max-width: 600px;  /* Ensure the content doesn't exceed 1/3 of the container width */
+    text-align: center;
+    padding: 0 20px;  /* Padding inside the content for better appearance */
+}
+
+.photo img {
+    margin : 40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.description, .skills, .languages {
+    margin-bottom: 20px;
+}
+
+.description p, .skills p, .languages p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.skills h2, .languages h2 {
+    margin-bottom: 10px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Create 3 equal columns */
+    gap: 15px;  /* Space between the columns */
+    text-align: left;
+}
+
+.languages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Create 2 equal columns */
+    gap: 15px;  /* Space between the columns */
+    text-align: left;
+}
+
+.skill, .language {
+    text-align: left;
+}
+
+.skill p, .language p {
+    margin: 0 0 5px;
+}
+
+.skill-level, .language-level {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #555;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.dot.filled {
+    background-color: #e5e5e5;
+}

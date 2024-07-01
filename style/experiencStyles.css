@@ -1,0 +1,79 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 60px;  /* Ensure content is not hidden under the fixed navbar */
+}
+
+.navbar {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #aaa;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content {
+    width: 50%;
+    text-align: justify;
+}
+
+.experience {
+    margin-bottom: 40px;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.company-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-details h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.company-name, .dates {
+    margin: 2px 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.description {
+    margin-left: 70px;  /* Align the description text with the start of the company details */
+    line-height: 1.6;
+}
